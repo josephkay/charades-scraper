@@ -6,8 +6,11 @@
 from scrapy.item import Item, Field
 
 class CharadesItem(Item):
+    type = Field()
     title = Field()
-    authors = Field()
+    person = Field()
+    genres = Field()
     rating = Field()
     votes = Field()
     description = Field()
+    language = Field()

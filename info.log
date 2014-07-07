@@ -1,0 +1,119 @@
+2014-07-07 17:38:15+0100 [scrapy] INFO: Scrapy 0.18.2 started (bot: charades_scraper)
+2014-07-07 17:38:15+0100 [goodreads] INFO: Spider opened
+2014-07-07 17:38:15+0100 [goodreads] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2014-07-07 17:38:20+0100 [scrapy] INFO: title: Romeo and Juliet
+2014-07-07 17:38:20+0100 [scrapy] INFO: authors: William Shakespeare
+2014-07-07 17:38:20+0100 [scrapy] INFO: rating: 3.72
+2014-07-07 17:38:20+0100 [scrapy] INFO: votes: 1154088
+2014-07-07 17:38:20+0100 [scrapy] INFO: genres: Classics, Plays, Romance
+2014-07-07 17:38:20+0100 [scrapy] INFO: language: English
+2014-07-07 17:38:20+0100 [scrapy] INFO: description: Romeo and Juliet is a tragedy written early in the career of playwright William Shakespeare about two young "star-cross'd lovers" whose deaths ultimately unite their feuding families. It was among Shakespeare's most popular plays during his lifetime and, along with Hamlet and Macbeth, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers.
+2014-07-07 17:38:21+0100 [scrapy] INFO: title: The Tragedy Of Dido Queene Of Carthage
+2014-07-07 17:38:21+0100 [scrapy] INFO: authors: Christopher Marlowe
+2014-07-07 17:38:21+0100 [scrapy] INFO: rating: 3.56
+2014-07-07 17:38:21+0100 [scrapy] INFO: votes: 151
+2014-07-07 17:38:21+0100 [scrapy] INFO: genres: Plays, Drama, Classics
+2014-07-07 17:38:21+0100 [scrapy] INFO: language: unknown
+2014-07-07 17:38:21+0100 [scrapy] INFO: description: Christopher Marlowe was a 16th century English playwright.  He was the leading Elizabethan tragedian before Shakespeare.  His works are known for their overreaching protagonists and his use of blank verse.  Little is known about Marlowe's life, but there is much speculation about his possibly being a spy, homosexual, a heretic, magician and atheist.  The Tragedy of Dido Queene of Carthage is full of the Greek characters the reader will be familiar with.  Besides Dido the cast includes Jupiter, Hermes, Cupid, Venus and Juno.  Dido was the first queen and founder of Carthage.  Her story has been told in many ways.  Marlowe's drama is one of the best.
+2014-07-07 17:38:21+0100 [scrapy] INFO: title: Floridoro: A Chivalric Romance
+2014-07-07 17:38:21+0100 [scrapy] INFO: authors: Moderata Fonte, Valeria Finucci, Julia Kisacky
+2014-07-07 17:38:21+0100 [scrapy] INFO: rating: 5.00
+2014-07-07 17:38:21+0100 [scrapy] INFO: votes: 1
+2014-07-07 17:38:21+0100 [scrapy] INFO: genres: unknown
+2014-07-07 17:38:21+0100 [scrapy] INFO: language: English
+2014-07-07 17:38:21+0100 [scrapy] INFO: description: The first original chivalric poem written by an Italian woman, Floridoro imbues a strong feminist ethos into a hypermasculine genre. Dotted with the usual characteristics—dark forests, illusory palaces, enchanted islands, seductive sorceresses—Floridoro is the story of the two greatest knights of a bygone age: the handsome Floridoro, who risks everything for love, and the beautiful Risamante, who helps women in distress while on a quest for her inheritance. Throughout, Moderata Fonte (1555–92) vehemently defends women’s capacity to rival male prowess in traditionally male-dominated spheres. And her open criticism of women’s lack of education is echoed in the plights of various female characters who must depend on unreliable men.First published in 1581, Floridoro remains a vivacious and inventive narrative by a singular poet.
+2014-07-07 17:38:21+0100 [goodreads] ERROR: Error processing {'description': u'The first original chivalric poem written by an Italian woman, Floridoro imbues a strong feminist ethos into a hypermasculine genre. Dotted with the usual characteristics\u2014dark forests, illusory palaces, enchanted islands, seductive sorceresses\u2014Floridoro is the story of the two greatest knights of a bygone age: the handsome Floridoro, who risks everything for love, and the beautiful Risamante, who helps women in distress while on\xa0a quest for her inheritance. Throughout, Moderata Fonte (1555\u201392) vehemently defends women\u2019s capacity to rival male prowess in traditionally male-dominated spheres. And her open criticism of women\u2019s lack of education is echoed in the plights of various female characters who must depend on unreliable men.First published in 1581, Floridoro remains a vivacious and inventive narrative by a singular poet.',
+	 'genres': 'unknown',
+	 'language': u'English',
+	 'person': u'Moderata Fonte, Valeria Finucci, Julia Kisacky',
+	 'rating': 500,
+	 'title': u'Floridoro: A Chivalric Romance',
+	 'type': 'book',
+	 'votes': 1}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\u2014' in position 170: ordinal not in range(128)
+	
+2014-07-07 17:38:21+0100 [scrapy] INFO: title: Euphues the Anatomy of Wit: Euphues & His England
+2014-07-07 17:38:21+0100 [scrapy] INFO: authors: John Lyly
+2014-07-07 17:38:21+0100 [scrapy] INFO: rating: 3.19
+2014-07-07 17:38:21+0100 [scrapy] INFO: votes: 91
+2014-07-07 17:38:21+0100 [scrapy] INFO: genres: Classics, Literature - 16th Century, Literature
+2014-07-07 17:38:21+0100 [scrapy] INFO: language: unknown
+2014-07-07 17:38:21+0100 [scrapy] INFO: description: EARLY ENGLISH WIT, POETRY & SATIRE. Imagine holding history in your hands. Now you can. Digitally preserved and previously accessible only through libraries as Early English Books Online, this rare material is now available in single print editions. Thousands of books written between 1475 and 1700 can be delivered to your doorstep in individual volumes of high quality historical reproductions. The power of literary device was never more in its prime than during this period of history, where a wide array of political and religious satire mocked the status quo and poetry called humankind to transcend the rigors of daily life through love, God or principle. This series comments on historical patterns of the human condition that are still visible today. ++++The below data was compiled from various identification fields in the bibliographic record of this title. This data is provided as an additional tool in helping to insure edition identification:++++Euphues. The anatomy of wit Verie pleasant for all gentlemen to read, and most necessarie to remember. By Ihon Lyly Master of Art.Lyly, John, 1554?-1606.[Edition statement:] Corrected and augmented.An edition of: Euphues. The anatomy of wyt.Printer's name and publication date from STC.Line 2 of imprint ends: dwel-.[4], 88 leaves Imprinted at London : [By T. East] for Gabriel Cawood dwelling in Paules church-yard,STC (2nd ed.) / 17054English Reproduction of the original in the Bodleian Library
+2014-07-07 17:38:22+0100 [scrapy] INFO: title: Mandragola
+2014-07-07 17:38:22+0100 [scrapy] INFO: authors: Niccolò Machiavelli
+2014-07-07 17:38:22+0100 [scrapy] INFO: rating: 3.61
+2014-07-07 17:38:22+0100 [scrapy] INFO: votes: 1022
+2014-07-07 17:38:22+0100 [scrapy] INFO: genres: Plays, Classics, European Literature - Italian Literature
+2014-07-07 17:38:22+0100 [scrapy] INFO: language: English
+2014-07-07 17:38:22+0100 [scrapy] INFO: description: A superior treatment of Machiavelli's minor masterpiece! Flaumenhaft's beautifully crafted, literal translation aims to capture the original intent of the playwright. Machiavelli himself distinguished carefully between translations and revisions; thus, Flaumenhaft finds a faithful translation essential to conveying Machiavelli's thought and to allowing direct access to the work. The Prologue explores the relationship between Machiavelli's stage comedies--part of the Comedia Erudita of the Italian Renaissance--and his political books. Mandragola focuses on the interplay between personal and political ethics, a major theme throughout his works. The translation includes helpful notes that clarify allusions, language, and context. Names of characters and places, titles and forms of address, and some familiar Italian words and phrases remain in Italian. Passages in Latin, as well as idioms, are reproduced in the notes.
+2014-07-07 17:38:22+0100 [goodreads] ERROR: Error processing {'description': u"A superior treatment of Machiavelli's minor masterpiece! Flaumenhaft's beautifully crafted, literal translation aims to capture the original intent of the playwright. Machiavelli himself distinguished carefully between translations and revisions; thus, Flaumenhaft finds a faithful translation essential to conveying Machiavelli's thought and to allowing direct access to the work. The Prologue explores the relationship between Machiavelli's stage comedies--part of the Comedia Erudita of the Italian Renaissance--and his political books. Mandragola focuses on the interplay between personal and political ethics, a major theme throughout his works. The translation includes helpful notes that clarify allusions, language, and context. Names of characters and places, titles and forms of address, and some familiar Italian words and phrases remain in Italian. Passages in Latin, as well as idioms, are reproduced in the notes.",
+	 'genres': u'Plays, Classics, European Literature - Italian Literature',
+	 'language': u'English',
+	 'person': u'Niccol\xf2 Machiavelli',
+	 'rating': 361,
+	 'title': u'Mandragola',
+	 'type': 'book',
+	 'votes': 1022}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xf2' in position 6: ordinal not in range(128)
+	
+2014-07-07 17:38:23+0100 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2014-07-07 17:38:23+0100 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2014-07-07 17:38:23+0100 [scrapy] INFO: title: Aminta
+2014-07-07 17:38:23+0100 [scrapy] INFO: authors: Torquato Tasso, Bruno Maier, Mario Fubini
+2014-07-07 17:38:23+0100 [scrapy] INFO: rating: 3.56
+2014-07-07 17:38:23+0100 [scrapy] INFO: votes: 52
+2014-07-07 17:38:23+0100 [scrapy] INFO: genres: Poetry, Literature - 16th Century, Plays
+2014-07-07 17:38:23+0100 [scrapy] INFO: language: Italian
+2014-07-07 17:38:23+0100 [scrapy] INFO: description: È un dramma pastorale in cinque atti. Il pastore Aminta ama la ninfa Silvia che, seguace di Diana, disprezza il suo amore. Quando Aminta viene a sapere che Silvia è morta, divorata dai lupi, per la disperazione si getta da una rupe. Silvia però è viva e, conosciuto il gesto di Aminta, capisce di amarlo. Il giovane pastore, miracolosamente incolume, riesce così a conquistare la bella ninfa.
+2014-07-07 17:38:23+0100 [goodreads] ERROR: Error processing {'description': u'\xc8 un dramma pastorale in cinque atti. Il pastore Aminta ama la ninfa Silvia che, seguace di Diana, disprezza il suo amore. Quando Aminta viene a sapere che Silvia \xe8 morta, divorata dai lupi, per la disperazione si getta da una rupe. Silvia per\xf2 \xe8 viva e, conosciuto il gesto di Aminta, capisce di amarlo. Il giovane pastore, miracolosamente incolume, riesce cos\xec a conquistare la bella ninfa.',
+	 'genres': u'Poetry, Literature - 16th Century, Plays',
+	 'language': u'Italian',
+	 'person': u'Torquato Tasso, Bruno Maier, Mario Fubini',
+	 'rating': 356,
+	 'title': u'Aminta',
+	 'type': 'book',
+	 'votes': 52}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xc8' in position 0: ordinal not in range(128)
+	

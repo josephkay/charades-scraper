@@ -1,0 +1,72 @@
+2014-07-07 17:38:21+0100 [goodreads] ERROR: Error processing {'description': u'The first original chivalric poem written by an Italian woman, Floridoro imbues a strong feminist ethos into a hypermasculine genre. Dotted with the usual characteristics\u2014dark forests, illusory palaces, enchanted islands, seductive sorceresses\u2014Floridoro is the story of the two greatest knights of a bygone age: the handsome Floridoro, who risks everything for love, and the beautiful Risamante, who helps women in distress while on\xa0a quest for her inheritance. Throughout, Moderata Fonte (1555\u201392) vehemently defends women\u2019s capacity to rival male prowess in traditionally male-dominated spheres. And her open criticism of women\u2019s lack of education is echoed in the plights of various female characters who must depend on unreliable men.First published in 1581, Floridoro remains a vivacious and inventive narrative by a singular poet.',
+	 'genres': 'unknown',
+	 'language': u'English',
+	 'person': u'Moderata Fonte, Valeria Finucci, Julia Kisacky',
+	 'rating': 500,
+	 'title': u'Floridoro: A Chivalric Romance',
+	 'type': 'book',
+	 'votes': 1}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\u2014' in position 170: ordinal not in range(128)
+	
+2014-07-07 17:38:22+0100 [goodreads] ERROR: Error processing {'description': u"A superior treatment of Machiavelli's minor masterpiece! Flaumenhaft's beautifully crafted, literal translation aims to capture the original intent of the playwright. Machiavelli himself distinguished carefully between translations and revisions; thus, Flaumenhaft finds a faithful translation essential to conveying Machiavelli's thought and to allowing direct access to the work. The Prologue explores the relationship between Machiavelli's stage comedies--part of the Comedia Erudita of the Italian Renaissance--and his political books. Mandragola focuses on the interplay between personal and political ethics, a major theme throughout his works. The translation includes helpful notes that clarify allusions, language, and context. Names of characters and places, titles and forms of address, and some familiar Italian words and phrases remain in Italian. Passages in Latin, as well as idioms, are reproduced in the notes.",
+	 'genres': u'Plays, Classics, European Literature - Italian Literature',
+	 'language': u'English',
+	 'person': u'Niccol\xf2 Machiavelli',
+	 'rating': 361,
+	 'title': u'Mandragola',
+	 'type': 'book',
+	 'votes': 1022}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xf2' in position 6: ordinal not in range(128)
+	
+2014-07-07 17:38:23+0100 [goodreads] ERROR: Error processing {'description': u'\xc8 un dramma pastorale in cinque atti. Il pastore Aminta ama la ninfa Silvia che, seguace di Diana, disprezza il suo amore. Quando Aminta viene a sapere che Silvia \xe8 morta, divorata dai lupi, per la disperazione si getta da una rupe. Silvia per\xf2 \xe8 viva e, conosciuto il gesto di Aminta, capisce di amarlo. Il giovane pastore, miracolosamente incolume, riesce cos\xec a conquistare la bella ninfa.',
+	 'genres': u'Poetry, Literature - 16th Century, Plays',
+	 'language': u'Italian',
+	 'person': u'Torquato Tasso, Bruno Maier, Mario Fubini',
+	 'rating': 356,
+	 'title': u'Aminta',
+	 'type': 'book',
+	 'votes': 52}
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
+	    return process_chain(self.methods[methodname], obj, *args)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
+	    d.callback(input)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
+	    self._startRunCallbacks(result)
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "charades_scraper\pipelines.py", line 20, in process_item
+	    self.writer.writerow(row)
+	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xc8' in position 0: ordinal not in range(128)
+	

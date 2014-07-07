@@ -1,0 +1,382 @@
+2014-07-04 18:39:44+0100 [scrapy] INFO: Scrapy 0.18.2 started (bot: charades_scraper)
+2014-07-04 18:39:44+0100 [goodreads] INFO: Spider opened
+2014-07-04 18:39:44+0100 [goodreads] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2014-07-04 18:39:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/139084.John_Lyly
+2014-07-04 18:39:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:47+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/139084.John_Lyly>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/74226.Teresa_of_vila
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/74226.Teresa_of_vila>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/4709842.Zahirud_din_Muhammad_Babur
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/4709842.Zahirud_din_Muhammad_Babur>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2795963-floridoro
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/2795963-floridoro>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/963049.Euphues_the_Anatomy_of_Wit
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/963049.Euphues_the_Anatomy_of_Wit>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/14410.Benvenuto_Cellini
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/14410.Benvenuto_Cellini>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/18135.Romeo_and_Juliet
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/18135.Romeo_and_Juliet>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/880378.The_Autobiography_Of_Benvenuto_Cellini
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/880378.The_Autobiography_Of_Benvenuto_Cellini>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7164843-aminta
+2014-07-04 18:39:48+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:48+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/7164843-aminta>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/182061.A_Short_Account_of_the_Destruction_of_the_Indies
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:49+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/182061.A_Short_Account_of_the_Destruction_of_the_Indies>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/106196.Bartolom_de_las_Casas
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:49+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/106196.Bartolom_de_las_Casas>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/author/show/893320.Moderata_Fonte
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-04 18:39:49+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/author/show/893320.Moderata_Fonte>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	
+2014-07-04 18:39:49+0100 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/264322.The_Tragedy_Of_Dido_Queene_Of_Carthage
+2014-07-04 18:39:49+0100 [scrapy] ERROR: Couldn't find something: sequence item 0: expected string, list found
+2014-07-04 18:39:49+0100 [goodreads] ERROR: Spider error processing <GET https://www.goodreads.com/book/show/264322.The_Tragedy_Of_Dido_Queene_Of_Carthage>
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 607, in _tick
+	    taskObj._oneWorkUnit()
+	  File "C:\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield it.next()
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\offsite.py", line 23, in process_spider_output
+	    for x in result:
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "C:\Python27\lib\site-packages\scrapy\contrib\spiders\crawl.py", line 67, in _parse_response
+	    cb_res = callback(response, **cb_kwargs) or ()
+	  File "C:\python27\charades_scraper\charades_scraper\spiders\goodreads_spider.py", line 107, in parse_item
+	    item = DiabetescoukItem()
+	exceptions.NameError: global name 'DiabetescoukItem' is not defined
+	

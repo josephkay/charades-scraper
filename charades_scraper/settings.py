@@ -12,12 +12,12 @@ SPIDER_MODULES = ['charades_scraper.spiders']
 NEWSPIDER_MODULE = 'charades_scraper.spiders'
 
 ITEM_PIPELINES = [
-	'charades_scraper.pipelines.CharadesScraperPipeline'
+	'charades_scraper.pipelines.CSVPipeline'
 ]
 
 DEPTH_LIMIT = 1
 
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware' : None,
-    'plm.comm.rotate_useragent.RotateUserAgentMiddleware' :400
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware' : None,
+#    'charades_scraper.comm.rotate_useragent.RotateUserAgentMiddleware' : 400
+#}
