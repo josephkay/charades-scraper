@@ -1,72 +1,490 @@
-2014-07-07 17:38:21+0100 [goodreads] ERROR: Error processing {'description': u'The first original chivalric poem written by an Italian woman, Floridoro imbues a strong feminist ethos into a hypermasculine genre. Dotted with the usual characteristics\u2014dark forests, illusory palaces, enchanted islands, seductive sorceresses\u2014Floridoro is the story of the two greatest knights of a bygone age: the handsome Floridoro, who risks everything for love, and the beautiful Risamante, who helps women in distress while on\xa0a quest for her inheritance. Throughout, Moderata Fonte (1555\u201392) vehemently defends women\u2019s capacity to rival male prowess in traditionally male-dominated spheres. And her open criticism of women\u2019s lack of education is echoed in the plights of various female characters who must depend on unreliable men.First published in 1581, Floridoro remains a vivacious and inventive narrative by a singular poet.',
-	 'genres': 'unknown',
-	 'language': u'English',
-	 'person': u'Moderata Fonte, Valeria Finucci, Julia Kisacky',
-	 'rating': 500,
-	 'title': u'Floridoro: A Chivalric Romance',
-	 'type': 'book',
-	 'votes': 1}
-	Traceback (most recent call last):
-	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
-	    return process_chain(self.methods[methodname], obj, *args)
-	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
-	    d.callback(input)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
-	    self._startRunCallbacks(result)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "charades_scraper\pipelines.py", line 20, in process_item
-	    self.writer.writerow(row)
-	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\u2014' in position 170: ordinal not in range(128)
-	
-2014-07-07 17:38:22+0100 [goodreads] ERROR: Error processing {'description': u"A superior treatment of Machiavelli's minor masterpiece! Flaumenhaft's beautifully crafted, literal translation aims to capture the original intent of the playwright. Machiavelli himself distinguished carefully between translations and revisions; thus, Flaumenhaft finds a faithful translation essential to conveying Machiavelli's thought and to allowing direct access to the work. The Prologue explores the relationship between Machiavelli's stage comedies--part of the Comedia Erudita of the Italian Renaissance--and his political books. Mandragola focuses on the interplay between personal and political ethics, a major theme throughout his works. The translation includes helpful notes that clarify allusions, language, and context. Names of characters and places, titles and forms of address, and some familiar Italian words and phrases remain in Italian. Passages in Latin, as well as idioms, are reproduced in the notes.",
-	 'genres': u'Plays, Classics, European Literature - Italian Literature',
-	 'language': u'English',
-	 'person': u'Niccol\xf2 Machiavelli',
-	 'rating': 361,
-	 'title': u'Mandragola',
-	 'type': 'book',
-	 'votes': 1022}
-	Traceback (most recent call last):
-	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
-	    return process_chain(self.methods[methodname], obj, *args)
-	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
-	    d.callback(input)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
-	    self._startRunCallbacks(result)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "charades_scraper\pipelines.py", line 20, in process_item
-	    self.writer.writerow(row)
-	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xf2' in position 6: ordinal not in range(128)
-	
-2014-07-07 17:38:23+0100 [goodreads] ERROR: Error processing {'description': u'\xc8 un dramma pastorale in cinque atti. Il pastore Aminta ama la ninfa Silvia che, seguace di Diana, disprezza il suo amore. Quando Aminta viene a sapere che Silvia \xe8 morta, divorata dai lupi, per la disperazione si getta da una rupe. Silvia per\xf2 \xe8 viva e, conosciuto il gesto di Aminta, capisce di amarlo. Il giovane pastore, miracolosamente incolume, riesce cos\xec a conquistare la bella ninfa.',
-	 'genres': u'Poetry, Literature - 16th Century, Plays',
-	 'language': u'Italian',
-	 'person': u'Torquato Tasso, Bruno Maier, Mario Fubini',
-	 'rating': 356,
-	 'title': u'Aminta',
-	 'type': 'book',
-	 'votes': 52}
-	Traceback (most recent call last):
-	  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 62, in _process_chain
-	    return process_chain(self.methods[methodname], obj, *args)
-	  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 65, in process_chain
-	    d.callback(input)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 380, in callback
-	    self._startRunCallbacks(result)
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 488, in _startRunCallbacks
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 575, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "charades_scraper\pipelines.py", line 20, in process_item
-	    self.writer.writerow(row)
-	exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xc8' in position 0: ordinal not in range(128)
-	
+2014-07-11 22:07:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/118389.The_Love_Song_of_J_Alfred_Prufrock_and_Other_Poems
+2014-07-11 22:07:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:07:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/659469.The_Hobbit
+2014-07-11 22:07:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:07:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/9605.Cat_s_Cradle_God_Bless_You_Mr_Rosewater_Breakfast_of_Champions
+2014-07-11 22:07:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:07:44+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/21570662-conversations-with-lord-byron-on-perversion-163-years-after-his-lordshi
+2014-07-11 22:07:44+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:00+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/871294.Z
+2014-07-11 22:08:00+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/94351.Death_in_the_Andes
+2014-07-11 22:08:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/148831._
+2014-07-11 22:08:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7480790
+2014-07-11 22:08:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:52+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6553258-izhar-ul-haq
+2014-07-11 22:08:52+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/770672.Le_Hussard_Sur_Le_Toit_De_Jean_Giono
+2014-07-11 22:08:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:08:56+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20759233-bajki-nie-tylko-dla-dzieci
+2014-07-11 22:08:56+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:05+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2714425-ca-a-jaskrawo
+2014-07-11 22:09:05+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:13+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/482977.Harold_and_Maude
+2014-07-11 22:09:13+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:18+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12987376
+2014-07-11 22:09:18+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:26+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2106649.Commentary_on_the_Gospel_of_Luke
+2014-07-11 22:09:26+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1889640.Britannia_Mews
+2014-07-11 22:09:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:29+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1006052.Ex_schrijver
+2014-07-11 22:09:29+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1154512.The_Many_Adventures_of_Winnie_the_Pooh
+2014-07-11 22:09:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11265348-schoolboy-into-war
+2014-07-11 22:09:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:40+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20819591-advanced-control-theory
+2014-07-11 22:09:40+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:44+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/37479.Bastards_Boneheads
+2014-07-11 22:09:44+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:45+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2566781-great-molinas
+2014-07-11 22:09:45+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/22025721
+2014-07-11 22:09:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/66774.Mandala_Symbolism
+2014-07-11 22:09:49+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/908597.Sweet_Dreams
+2014-07-11 22:09:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/22309959
+2014-07-11 22:09:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:52+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1463316.Mercian_Hymns
+2014-07-11 22:09:52+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:53+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2784192-a-harvest-of-our-dreams-with-elegy-for-the-revolution
+2014-07-11 22:09:53+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:53+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/465170.Menneske_og_maktene
+2014-07-11 22:09:53+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6410772
+2014-07-11 22:09:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:09:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/229327.To_Eberhart_from_Ginsberg
+2014-07-11 22:09:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12737.William_Faulkner_s_Light_in_August
+2014-07-11 22:10:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:13+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6776893-the-winter-beach
+2014-07-11 22:10:13+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:16+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/550222.Psycho_Beach_Party
+2014-07-11 22:10:16+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:18+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/374615.Garden_of_Ashes
+2014-07-11 22:10:18+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/68118.Le_calice_noir_Le_secret_des_Templiers
+2014-07-11 22:10:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1395401.A_Choice_of_Kipling_s_Verse
+2014-07-11 22:10:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:27+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2569496-richard-s-cork-leg
+2014-07-11 22:10:27+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/143045.The_Knights_of_King_Midas
+2014-07-11 22:10:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:33+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4059627-rosa-luxemburg
+2014-07-11 22:10:33+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:40+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/737353.Las_m_scaras_del_h_roe
+2014-07-11 22:10:40+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1006061.Ex_drummer
+2014-07-11 22:10:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6673692
+2014-07-11 22:10:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2160309.Sex_Pol
+2014-07-11 22:10:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:56+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1596770.The_Atlantic_Monthly_Puzzler_Book
+2014-07-11 22:10:56+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:58+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/185368.She_Wasn_t_Soft
+2014-07-11 22:10:58+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:10:58+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1342347.Mangeclous
+2014-07-11 22:10:58+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1491459.A_estrutura_da_bola_de_sab_o
+2014-07-11 22:11:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:02+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8746609
+2014-07-11 22:11:02+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2799279-the-god-boy
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2818374-east-of-wimbledon
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/917833.The_final_fall
+2014-07-11 22:11:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:21+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/928645.The_United_Methodist_Hymnal
+2014-07-11 22:11:21+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1439660.Can_I_Get_There_By_Candlelight_
+2014-07-11 22:11:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/453410.Mickey_Mouse_s_Picnic
+2014-07-11 22:11:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6332829-hist-ria-de-dois-amores
+2014-07-11 22:11:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:43+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/326240.Heden_ben_ik_nuchter
+2014-07-11 22:11:43+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:45+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12083316-the-american-sisterhood
+2014-07-11 22:11:45+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1006047.Zijn_er_kanalen_in_Aalst_
+2014-07-11 22:11:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:58+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/326492.Kaalam_
+2014-07-11 22:11:58+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:58+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/154495.The_Holy_Land
+2014-07-11 22:11:58+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:11:59+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/9765119-il-berretto-a-sonagli
+2014-07-11 22:11:59+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:12+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/702544.Some_Desparate_Glory
+2014-07-11 22:12:12+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:16+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3298112-death-and-taxes
+2014-07-11 22:12:16+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/18135656-a-disciplina-do-amor
+2014-07-11 22:12:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:18+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13551907-ja-m-han-le-va
+2014-07-11 22:12:18+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:24+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1860245.18_Platoon
+2014-07-11 22:12:24+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:39+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1749624.Laments_for_the_Living_Collected_Stories
+2014-07-11 22:12:39+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:45+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7674727-l-fsins-tr
+2014-07-11 22:12:45+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11459786
+2014-07-11 22:12:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:54+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1796355.O_Menino_Maluquinho
+2014-07-11 22:12:54+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:12:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/451004.100_Questions_About_God
+2014-07-11 22:12:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:00+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6873808-o-porco-de-pe-e-outras-narracions
+2014-07-11 22:13:00+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2406918.Moses
+2014-07-11 22:13:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:06+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7762909-the-amazing-qur-an
+2014-07-11 22:13:06+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:20+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6280410-joseph
+2014-07-11 22:13:20+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/73727.Mulata
+2014-07-11 22:13:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/601828.Daddy
+2014-07-11 22:13:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:32+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/887956.The_Eternal_Smile
+2014-07-11 22:13:32+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:32+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/17971958-the-divine-and-the-decay
+2014-07-11 22:13:32+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:33+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/21937118
+2014-07-11 22:13:33+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:34+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7630.The_Fateful_Adventures_of_the_Good_Soldier_vejk_During_the_World_War_Book_One
+2014-07-11 22:13:34+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7891076-zilele-si-noptile-unui-student-intarziat
+2014-07-11 22:13:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:42+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3164071-rum-river
+2014-07-11 22:13:42+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:45+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8200999-garments-of-skin
+2014-07-11 22:13:45+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/184895.The_Revolution_And_The_Civil_War_In_Spain
+2014-07-11 22:13:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1961447.Heathcliff_At_Home
+2014-07-11 22:13:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:50+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/28329.The_Hawk_is_Dying
+2014-07-11 22:13:50+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:13:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1410564.Naked_Masks
+2014-07-11 22:13:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:11+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/108595.Finding_the_Heart_of_the_Child
+2014-07-11 22:14:11+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2145133.Hitler_s_Ideology
+2014-07-11 22:14:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2928883-remembrance-of-things-past-vol-i-of-ii
+2014-07-11 22:14:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:20+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/357137.Sandro_of_Chegem
+2014-07-11 22:14:20+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6056726-rachel-plummer-s-narrative-of-21-months-servitude-as-a-prisoner-among-th
+2014-07-11 22:14:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:27+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1983803.Behind_the_State_Capital_or_Cincinnati_Pike
+2014-07-11 22:14:27+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/148163.The_Night_World_and_the_Word_Night
+2014-07-11 22:14:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2874935-superstoe
+2014-07-11 22:14:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:42+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/10281980-i-giganti-della-montagna
+2014-07-11 22:14:42+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2197126.Symbiosis_Separation
+2014-07-11 22:14:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/661059.The_Mask_of_Sanity
+2014-07-11 22:14:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:14:56+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1832552.Sunset_Gun
+2014-07-11 22:14:56+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:08+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2145132.Psychoanalysis_of_Racism_Revolution_and_Nationalism
+2014-07-11 22:15:08+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/673999.Phaedra
+2014-07-11 22:15:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:11+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2455019.Human_Rights_And_Legal_Defense_In_Northern_Ireland
+2014-07-11 22:15:11+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:14+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/570149.Travelling_in_the_Family
+2014-07-11 22:15:14+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:27+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1672092.The_Year_Of_The_Whale
+2014-07-11 22:15:27+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:29+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1847175.The_Child_From_The_Sea_Part_1_Of_2
+2014-07-11 22:15:29+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2331287.Mitsou_ou_Comment_l_esprit_vient_aux_filles
+2014-07-11 22:15:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:38+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20959586-mulata
+2014-07-11 22:15:38+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:44+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/551076.Year_of_the_Death_of_Ricardo_Reis_The_Gospel_According_to_Jesus_Christ_Blindness_3_Books_in_One_
+2014-07-11 22:15:44+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:59+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/16341.The_Moving_Finger
+2014-07-11 22:15:59+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:15:59+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3431323-go-tell-it-on-the-mountain-giovanni-s-room-the-fire-next-time
+2014-07-11 22:15:59+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:16:20+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7627612-the-prophet-s-methods-of-correcting-people-s-mistakes
+2014-07-11 22:16:20+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:16:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4745500-l-ann-e-derni-re-marienbad
+2014-07-11 22:16:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:16:29+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6462558
+2014-07-11 22:16:29+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:16:43+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/481336.Discontents
+2014-07-11 22:16:43+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:16:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3408256-come-and-go
+2014-07-11 22:16:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:17:19+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7508927-o-s-tio-do-picapau-amarelo
+2014-07-11 22:17:19+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:18:10+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1938342.The_Naomi_Poems_Book_One
+2014-07-11 22:18:10+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:18:21+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1857499.Appaloosa_Rising
+2014-07-11 22:18:21+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:18:40+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/109774.Science_and_Sanity
+2014-07-11 22:18:40+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:12+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/777392.Real
+2014-07-11 22:19:12+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1105192.Dogs_in_Lingerie
+2014-07-11 22:19:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/23885.No_One_Writes_to_the_Colonel_and_Other_Stories
+2014-07-11 22:19:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:21+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/688993.The_Suffolk_Trilogy
+2014-07-11 22:19:21+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:25+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1832079.John_Medicinewolf
+2014-07-11 22:19:25+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:19:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1105539.The_Mass_Strike
+2014-07-11 22:19:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:21:44+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3338544
+2014-07-11 22:21:44+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:21:45+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12639781-ksi-ka-poniek-d-kucharska
+2014-07-11 22:21:45+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:21:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3977238-alfred-hitchcock-presents
+2014-07-11 22:21:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1022228.The_Curse_of_the_Witch_Queen
+2014-07-11 22:22:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:04+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/309355.V_C_Andrews_II
+2014-07-11 22:22:04+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:11+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3266189-runaway-slave
+2014-07-11 22:22:11+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:15+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4605579-fate-prediction
+2014-07-11 22:22:15+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13613746-pan-kleks
+2014-07-11 22:22:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:26+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/488682.Law_V_Life
+2014-07-11 22:22:26+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:29+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3716602-au-co-eur-de-l-integrisme-juif
+2014-07-11 22:22:29+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1202078.Olava_Bilac_e_Fernando_Pessoa
+2014-07-11 22:22:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/410373.Selected_Poems
+2014-07-11 22:22:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:34+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1753140.Being_Here
+2014-07-11 22:22:34+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:39+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1607971.Ho_Chi_Minh_On_Revolution
+2014-07-11 22:22:39+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:39+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11679058
+2014-07-11 22:22:39+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/334230.Understanding_Graciliano_Ramos
+2014-07-11 22:22:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:52+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2746707-graciliano
+2014-07-11 22:22:52+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:54+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7875557
+2014-07-11 22:22:54+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:22:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6325303
+2014-07-11 22:22:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6716412
+2014-07-11 22:23:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:05+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15708030
+2014-07-11 22:23:05+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:08+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20886667-the-flight-of-icarus
+2014-07-11 22:23:08+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:10+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/5533041-assassin-s-apprentice-royal-assassin
+2014-07-11 22:23:10+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:11+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/821000.Now_We_Are_Six
+2014-07-11 22:23:11+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:21+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/9739361-too-much-salt-and-pepper
+2014-07-11 22:23:21+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/16120373-exit-the-king
+2014-07-11 22:23:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:33+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11921099-don-quixote-u-s-a
+2014-07-11 22:23:33+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:44+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11382.Cuttlefish_Bones
+2014-07-11 22:23:44+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3367015-merleau-ponty-s-critique-of-sartre-s-philosophy
+2014-07-11 22:23:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:50+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6204994-the-lover-s-melancholy
+2014-07-11 22:23:50+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:52+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2332704.Bertoldo_e_Bertoldino
+2014-07-11 22:23:52+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:53+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1031387.Life_of_Richard_Savage
+2014-07-11 22:23:53+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:54+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3412331-het-wederzyds-huwelyks-bedrog
+2014-07-11 22:23:54+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:23:59+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2045224.Encyclopedie_1
+2014-07-11 22:23:59+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:24:15+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/30.Best_Books_of_the_18th_Century
+2014-07-11 22:24:15+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:24:32+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/7
+2014-07-11 22:24:32+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:24:34+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3233076-gijsbrecht-van-amstel
+2014-07-11 22:24:34+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:24:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/53
+2014-07-11 22:24:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:10+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1317181.Harry_Potter_and_the_Order_of_the_Phoenix
+2014-07-11 22:25:10+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:13+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13115342-just-winging-it
+2014-07-11 22:25:13+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12860870-negerjood-in-moederland
+2014-07-11 22:25:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15268257-covenant-s-end
+2014-07-11 22:25:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/10587893-the-final-alice
+2014-07-11 22:25:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:25+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15785020-ifra-podle-kabaly
+2014-07-11 22:25:25+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:38+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8893058-to-rule-the-universe
+2014-07-11 22:25:38+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:25:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20320084-armored
+2014-07-11 22:25:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13539770
+2014-07-11 22:26:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6365553-visages-de-shoah
+2014-07-11 22:26:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:03+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7252889-grave-new-world
+2014-07-11 22:26:03+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:05+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/5688308-sarabande
+2014-07-11 22:26:05+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13159408-roderick-blackwood-the-demon-stone
+2014-07-11 22:26:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:24+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12334322-unknown-book-12334322
+2014-07-11 22:26:24+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:27+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11700412-road-to-megara
+2014-07-11 22:26:27+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/10335319-fat-kills
+2014-07-11 22:26:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:26:32+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/9841771-1-1-jihad-britain
+2014-07-11 22:26:32+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:27:37+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/14922048-developmental-time-cultural-space
+2014-07-11 22:27:37+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:27:41+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/14411137-odes-rhymes-of-life-times
+2014-07-11 22:27:41+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:27:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/19737193-teach-us-to-outgrow-our-madness
+2014-07-11 22:27:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:27:58+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4434868-the-nation
+2014-07-11 22:27:58+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:04+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/7981184-the-adamic-language-and-calendar
+2014-07-11 22:28:04+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:12+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2104355.Memory_of_Fire
+2014-07-11 22:28:12+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/18040989-skymningsland
+2014-07-11 22:28:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:25+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20464117-the-final-frontier
+2014-07-11 22:28:25+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:29+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13606090-great-leads
+2014-07-11 22:28:29+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:32+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15733958-king-of-angels-a-novel-about-the-genesis-of-identity-and-belief
+2014-07-11 22:28:32+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:35+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13071334-dwarg-in-the-seventh-dimension
+2014-07-11 22:28:35+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:28:36+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/16090365-the-newton-inheritance
+2014-07-11 22:28:36+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6294536-antologia-po-tica
+2014-07-11 22:29:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:22+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11579476-the-kabbalist
+2014-07-11 22:29:22+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:28+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/17879710-mr-loverman
+2014-07-11 22:29:28+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/172258.Vampire_Destiny_Trilogy
+2014-07-11 22:29:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:38+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12748196-animals-crackers-in-my-bed
+2014-07-11 22:29:38+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:29:43+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8015286-weltmacht-durch-die-hintert-r
+2014-07-11 22:29:43+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:30:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/10464732-la-ley-del-espejo
+2014-07-11 22:30:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:30:16+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/69108.Ressusciter_Folio_
+2014-07-11 22:30:16+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:30:40+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4565266-modlitwa-o-deszcz
+2014-07-11 22:30:40+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:30:54+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/10220922-quirk
+2014-07-11 22:30:54+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:31:03+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12566857
+2014-07-11 22:31:03+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:31:05+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13090527-malcolm-x
+2014-07-11 22:31:05+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:31:19+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/17305.Frank_Peretti_Value_Pack
+2014-07-11 22:31:19+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:31:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2522871.Macbeth_For_Murderers
+2014-07-11 22:31:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:31:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6322036-bunny
+2014-07-11 22:31:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:32:19+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/913033.Michel_Houellebecq_Coffret_en_3_volumes
+2014-07-11 22:32:19+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:32:33+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12189855-midnight-breed-trilogy
+2014-07-11 22:32:33+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:32:57+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2890627-the-church-and-the-jews
+2014-07-11 22:32:57+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:33:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15925055-the-very-best-of-the-common-man
+2014-07-11 22:33:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:33:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13096012-becca-fitzpatrick-collection
+2014-07-11 22:33:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:33:39+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/4000824-espa-a-frente-al-islam
+2014-07-11 22:33:39+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:33:41+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/20877966-the-cannibals-of-candyland
+2014-07-11 22:33:41+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:34:03+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/16001962-drift
+2014-07-11 22:34:03+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:34:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12274389-the-dark-tower-series-collection
+2014-07-11 22:34:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:37:01+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11187937-un-spoken
+2014-07-11 22:37:01+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:37:06+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/21900645-i-know-autistic
+2014-07-11 22:37:06+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:37:46+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/11030760-baby-jaimie-goes-to-school
+2014-07-11 22:37:46+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:37:53+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/13453346-baby-jaimie-gets-stage-fright
+2014-07-11 22:37:53+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:38:12+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/957252.Debunking_9_11_Debunking
+2014-07-11 22:38:12+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:38:23+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/9300180-slapshots
+2014-07-11 22:38:23+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:38:30+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/5588339-the-secret-school
+2014-07-11 22:38:30+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:38:42+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/19958570-1001
+2014-07-11 22:38:42+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:38:52+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/1140124.The_Speech_of_Angels
+2014-07-11 22:38:52+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:39:20+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/6919271-feenlicht
+2014-07-11 22:39:20+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:07+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/16
+2014-07-11 22:40:07+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:09+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/22680429-the-first-book-of-common-prayer-of-edward-vi-and-the-ordinal-of-1549-wi
+2014-07-11 22:40:09+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:13+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8026604-joe-miller-s-jests-or-the-wits-vade-mecum
+2014-07-11 22:40:13+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:38+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/2726763-emma-persuasion
+2014-07-11 22:40:38+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:49+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/15745563-de-lotgevallen-van-ferdinand-huyck
+2014-07-11 22:40:49+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:50+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8191088-critical-and-historical-essays-vol-1-of-2
+2014-07-11 22:40:50+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:55+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/3336858-shadow
+2014-07-11 22:40:55+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:40:56+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8888282-the-vision-of-judgment
+2014-07-11 22:40:56+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:03+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/991432.In_Search_of_Treasure
+2014-07-11 22:41:03+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:03+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/12192267-thanatopsis-and-other-poems
+2014-07-11 22:41:03+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:06+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/734914.Fairy_Tales
+2014-07-11 22:41:06+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:17+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/8061706-anna-liisa
+2014-07-11 22:41:17+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:47+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/22681465-the-works-of-john-wesley
+2014-07-11 22:41:47+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:48+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/22678992-the-journal-of-john-wesley
+2014-07-11 22:41:48+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:41:51+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/book/show/362996.Die_Luther_Bibel_von_1534
+2014-07-11 22:41:51+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:42:00+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/52
+2014-07-11 22:42:00+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'
+2014-07-11 22:42:21+0100 [scrapy] ERROR: Problem with URL: https://www.goodreads.com/list/show/6
+2014-07-11 22:42:21+0100 [scrapy] ERROR: Couldn't find something: 'NoneType' object has no attribute 'contents'

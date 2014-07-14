@@ -15,7 +15,7 @@ ITEM_PIPELINES = [
 	'charades_scraper.pipelines.CSVPipeline'
 ]
 
-DEPTH_LIMIT = 1
+#DEPTH_LIMIT = 1
 
 #DOWNLOADER_MIDDLEWARES = {
 #    'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware' : None,
