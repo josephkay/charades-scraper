@@ -9,10 +9,11 @@ Template Name: Charades
 
 <head>
   <title>Charades Generator</title>
-  <link rel="stylesheet" type="text/css" href="console/style.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/charadesstyle.css" />
 </head>
 
 <body>
+<div id="wrap">
 
 <h1>Charades Generator</h1>
 
@@ -42,8 +43,8 @@ function sanitise($str,$id) {
 
 $book_radio = "checked";
 $film_radio = "";
-$easy_radio = "checked";
-$hard_radio = "";
+$known_radio = "checked";
+$obscure_radio = "";
 
 if (isset($_GET['type']) AND isset($_GET['level'])) {
     
@@ -67,16 +68,23 @@ if (isset($_GET['type']) AND isset($_GET['level'])) {
         $person = "Director";
     }
     
-    if ($level == "easy") {
+    if ($level == "known") {
         $operator = ">=";
     } else {
         $operator = "<";
-        $easy_radio = "";
-        $hard_radio = "checked";
+        $known_radio = "";
+        $obscure_radio = "checked";
     }
     
     $mysqli = new mysqli("localhost","otfopcom","s4c98nOTj8","charades") or die(mysql_error());
     $mysqli->autocommit(FALSE);
+    
+    if ($stmt = $mysqli->prepare("SET NAMES utf8")) {
+        $stmt->execute();
+    } else {
+        printf("Prepared Statement Error: %s\n", $mysqli->error);
+        $mysqli->rollback();
+    }
     
     //if ($stmt = $mysqli->prepare($count_statement.$difference."2000")) {
     if ($stmt = $mysqli->prepare("SELECT id FROM ".$table." WHERE votes ".$operator." ?")) {
@@ -91,7 +99,7 @@ if (isset($_GET['type']) AND isset($_GET['level'])) {
             array_push($ids, $id);
         }
         
-        printf("<p>Number of items in this category:  ".count($ids)."</p>");
+        //printf("<p>Number of items in this category:  ".count($ids)."</p>");
         $randomno = rand(0, count($ids)-1);
         $randomid = $ids[$randomno];
         
@@ -102,10 +110,15 @@ if (isset($_GET['type']) AND isset($_GET['level'])) {
             $stmt2->store_result();
             while ($stmt2->fetch()) {
                 
-                printf("<p>Title: ".$title."</p>");
-                printf("<p>".$person.": ".$author."</p>");
-                printf("<p>Genres: ".$genres."</p>");
-                printf("<p>Description: ".$description."</p>");
+                try {
+                    printf("<table id='details'><tr><td class='label'>Title:</td><td>".$title."</td></tr>");
+                    printf("<tr><td class='label'>".$person.":</td><td>".$author."</td></tr>");
+                    printf("<tr><td class='label'>Genres:</td><td>".$genres."</td></tr>");
+                    printf("<tr><td class='label'>Description:</td><td>".$description."</td></tr></table>");
+                } catch (Exception $e) {
+                    printf("<p>Sorry! Something went wrong... Try again!</p>");
+                }
+                
                 
             }
         }
@@ -124,13 +137,35 @@ if (isset($_GET['type']) AND isset($_GET['level'])) {
 
 <form action="http://www.joseph-kay.com/creations/charades" method="get">
 
-<input type="radio" name="type" value="book" <? echo $book_radio ?> >Book<br>
-<input type="radio" name="type" value="film" <? echo $film_radio ?> >Film<br><br>
-<input type="radio" name="level" value="easy" <? echo $easy_radio ?> >Easy<br>
-<input type="radio" name="level" value="hard" <? echo $hard_radio ?> >Hard<br><br>
-<input type="submit" value="Go!">
+<table id="form">
+<tr>
+<td>
+<input type="radio" name="type" value="book" id="book" <? echo $book_radio ?> ><label for="book">Book</label>
+</td>
+<td>
+<input type="radio" name="level" value="known" id="known" <? echo $known_radio ?> ><label for="known">Well known</label>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" name="type" value="film" id="film" <? echo $film_radio ?> ><label for="film">Film</label>
+</td>
+<td>
+<input type="radio" name="level" value="obscure" id="obscure" <? echo $obscure_radio ?> ><label for="obscure">Obscure</label>
+</td>
+</tr>
+</table>
+<table id="submittable">
+<tr>
+<td>
+<input type="submit" value="Go!" id="submit">
+</td>
+</tr>
+</table>
+
 </form>
 
+</div>
 </body>
 
 </html>
